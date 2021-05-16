@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.LocationsController">
+    <children>
+        <Button fx:id="secondLoc" layoutX="559.0" layoutY="684.0" mnemonicParsing="false" text="2nd location"/>
+        <Button fx:id="backButton" layoutX="574.0" layoutY="737.0" mnemonicParsing="false" text="Назад"/>
+        <Button fx:id="firstLoc" layoutX="454.0" layoutY="684.0" mnemonicParsing="false" text="1st location"/>
+        <Button fx:id="thirdLoc" layoutX="666.0" layoutY="684.0" mnemonicParsing="false" text="3rd location"/>
+        <ScrollPane prefHeight="630.0" prefWidth="1200.0">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="625.0" prefWidth="1195.0">
+                    <children>
+                        <WebView fx:id="webWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                 minWidth="-Infinity" prefHeight="625.0" prefWidth="1195.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

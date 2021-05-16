@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FilmTableController">
+    <children>
+        <TableView fx:id="movieTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1164.0" styleClass="movie-table">
+            <columns>
+                <TableColumn fx:id="posterColumn" editable="false" maxWidth="350.0" minWidth="-Infinity" prefWidth="350.0" resizable="false" sortable="false" text="Постер" />
+                <TableColumn fx:id="infoColumn" editable="false" maxWidth="820.0" minWidth="-Infinity" prefWidth="761.0" resizable="false" sortable="false" text="Информация" />
+            </columns>
+        </TableView>
+        <Button fx:id="backButton" layoutX="576.0" layoutY="751.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>

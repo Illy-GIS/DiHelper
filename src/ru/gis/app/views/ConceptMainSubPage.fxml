@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gis.app.controllers.ConceptMainSubPageController">
+   <children>
+      <Label fx:id="pageLabel" focusTraversable="false" layoutX="90.0" layoutY="40.0" styleClass="page-labels" text="КОНЦЕПТЫ">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="createConceptButton" layoutX="110.0" layoutY="140.0" mnemonicParsing="false" styleClass="sub-panel-buttons" text="+   Создать новый концепт">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" left="40.0" right="40.0" top="15.0" />
+         </padding>
+      </Button>
+      <Separator layoutX="60.0" layoutY="240.0" prefHeight="0.0" prefWidth="1045.0" />
+      <ListView fx:id="conceptList" layoutX="110.0" layoutY="280.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="945.0" styleClass="concept-list" />
+      <Label fx:id="emptyLabel" focusTraversable="false" layoutX="110.0" layoutY="280.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="70.0" prefWidth="550.0" styleClass="empty-concepts-label" />
+   </children>
+</AnchorPane>

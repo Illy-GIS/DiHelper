@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="filmListButton" layoutX="112.0" layoutY="368.0" mnemonicParsing="false" prefHeight="134.0"
+                prefWidth="374.0" text="Список фильмов"/>
+        <Button fx:id="mapButton" layoutX="715.0" layoutY="368.0" mnemonicParsing="false" prefHeight="134.0"
+                prefWidth="374.0" text="Карта"/>
+        <Button fx:id="actorButton" layoutX="413.0" layoutY="574.0" mnemonicParsing="false" prefHeight="134.0"
+                prefWidth="374.0" text="Актеры"/>
+        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="103.0"
+               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0"
+               prefWidth="760.0"
+               style="-fx-font-family: Bungee Shade; -fx-font-style: normal; -fx-font-weight: normal; -fx-font-size: 100px;"
+               text="DiHelper" textAlignment="CENTER" textFill="#4e5caa"/>
+    </children>
+</AnchorPane>

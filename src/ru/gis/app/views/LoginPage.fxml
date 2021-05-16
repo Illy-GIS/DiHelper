@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gis.app.controllers.LoginPageController">
+   <children>
+      <Pane fx:id="rightWhitePane" layoutX="850.0" prefHeight="950.0" prefWidth="590.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label fx:id="enterLabel" alignment="CENTER" layoutX="150.0" layoutY="290.0" prefHeight="53.0" prefWidth="290.0" styleClass="login-label" text="Вход в аккаунт" textAlignment="CENTER" />
+            <Pane fx:id="loginFieldsPane" layoutX="85.0" layoutY="374.0">
+               <children>
+                  <TextField fx:id="emailField" prefHeight="60.0" prefWidth="420.0" promptText="Почта" styleClass="login-fields">
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="20.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <PasswordField fx:id="passwordField" layoutY="85.0" prefHeight="60.0" prefWidth="420.0" promptText="Пароль" styleClass="login-fields">
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="20.0" top="10.0" />
+                     </padding>
+                  </PasswordField>
+                  <Button fx:id="loginButton" layoutX="85.0" layoutY="175.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="login-button" text="ВХОД">
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="noAccountLabel" layoutX="247.0" layoutY="757.0" styleClass="login-register-suggestion-label" text="НЕТ АККАУНТА?" />
+            <Button fx:id="registerSuggestionButton" layoutX="177.0" layoutY="774.0" mnemonicParsing="false" styleClass="login-register-suggestion" text="ЗАРЕГИСТРИРУЙТЕСЬ">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Label fx:id="errorTextLog" alignment="TOP_CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="150.0" layoutY="624.0" prefHeight="82.0" prefWidth="290.0" styleClass="error-label" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane fx:id="registerForChangePane" layoutX="850.0" layoutY="950.0" prefHeight="950.0" prefWidth="590.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label fx:id="registrationLabel" alignment="CENTER" layoutX="150.0" layoutY="290.0" prefHeight="53.0" prefWidth="290.0" styleClass="login-label" text="Регистрация" textAlignment="CENTER" />
+            <Pane fx:id="firstRegPane" layoutX="85.0" layoutY="374.0">
+               <children>
+                  <TextField fx:id="regEmailField" prefHeight="60.0" prefWidth="420.0" promptText="Почта" styleClass="login-fields">
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="20.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="regNameField" layoutY="85.0" prefHeight="60.0" prefWidth="420.0" promptText="Имя" styleClass="login-fields">
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="20.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <Button fx:id="goNextButton" layoutX="85.0" layoutY="175.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="login-button" text="ДАЛЕЕ">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="haveAccountLabel" layoutX="252.0" layoutY="757.0" styleClass="login-register-suggestion-label" text="ЕСТЬ АККАУНТ?" />
+            <Button fx:id="loginSuggestionButton" layoutX="194.0" layoutY="774.0" mnemonicParsing="false" styleClass="login-register-suggestion" text="ВОЙТИ В АККАУНТ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Pane fx:id="secondRegPane" layoutX="675.0" layoutY="374.0">
+               <children>
+                  <PasswordField fx:id="regPasswordField" prefHeight="60.0" prefWidth="420.0" promptText="Пароль" styleClass="login-fields">
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="20.0" top="10.0" />
+                     </padding>
+                  </PasswordField>
+                  <PasswordField fx:id="regPasswordConfirmField" layoutY="85.0" prefHeight="60.0" prefWidth="420.0" promptText="Подтверждение пароля" styleClass="login-fields">
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="20.0" top="10.0" />
+                     </padding>
+                  </PasswordField>
+                  <Button fx:id="regBackButton" layoutX="42.0" layoutY="175.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="62.0" styleClass="login-button" text="&lt;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="registerButton" layoutX="149.0" layoutY="175.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="login-button" text="РЕГИСТРАЦИЯ">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="errorTextReg" alignment="TOP_CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="150.0" layoutY="625.0" prefHeight="115.0" prefWidth="290.0" styleClass="error-label" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane fx:id="leftBluePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="850.0" style="-fx-background-color: E2F7FF;">
+         <children>
+            <ImageView fx:id="logoImageView" fitHeight="124.0" fitWidth="657.0" layoutX="97.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <ImageView fx:id="loginPicture" fitHeight="1000.0" fitWidth="1500.0" layoutX="-480.0" layoutY="189.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

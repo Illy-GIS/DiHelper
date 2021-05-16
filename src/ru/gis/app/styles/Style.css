@@ -1,0 +1,932 @@
+.login-label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 36;
+    -fx-text-fill: #5C5C5C;
+}
+
+.login-fields {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 20;
+    -fx-border-color: #4E5CAA;
+    -fx-border-width: 2;
+    -fx-border-radius: 70;
+    -fx-background-radius: 70;
+    -fx-text-fill: #4E5CAA;
+}
+
+.login-button {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 24;
+    -fx-text-fill: #4E5CAA;
+    -fx-border-color: #4E5CAA;
+    -fx-border-width: 2;
+    -fx-border-radius: 70;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 70;
+}
+
+.login-button:hover {
+    -fx-background-color: #DCDCDC;
+}
+
+.login-button:focused {
+    -fx-border-color: #CD5C5C;
+    -fx-text-fill: #CD5C5C;
+}
+
+.login-button:armed {
+    -fx-border-color: #CD5C5C;
+    -fx-text-fill: #CD5C5C;
+    -fx-background-color: #696969;
+}
+
+.login-register-suggestion-label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 13;
+    -fx-text-fill: #858383;
+}
+
+.login-register-suggestion {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 20;
+    -fx-text-fill: #4E5CAA;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.login-register-suggestion:hover {
+    -fx-text-fill: #CD5C5C;
+}
+
+.login-register-suggestion:focused {
+    -fx-text-fill: #CD5C5C;
+}
+
+.login-register-suggestion:armed {
+    -fx-text-fill: #CD5C5C;
+}
+
+.error-label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 14;
+    -fx-text-fill: #FF0000;
+}
+
+.dialog-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.dialog-pane .button {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-text-fill: #4E5CAA;
+    -fx-border-color: #4E5CAA;
+    -fx-border-width: 2;
+    -fx-border-radius: 70;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 70;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #DCDCDC;
+}
+
+.dialog-pane .button:focused {
+    -fx-border-color: #CD5C5C;
+    -fx-text-fill: #CD5C5C;
+}
+
+.dialog-pane .button:armed {
+    -fx-border-color: #CD5C5C;
+    -fx-text-fill: #CD5C5C;
+    -fx-background-color: #696969;
+}
+
+.separator {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.basic-panels {
+    -fx-background-color: #FFFFFF;
+}
+
+.sub-panels {
+    -fx-background-color: #F6FCFF;
+}
+
+.sub-panel-buttons {
+    -fx-background-color: #F6FCFF;
+    -fx-background-radius: 5;
+    -fx-border-color: #4E5CAA;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-text-fill: #4E5CAA;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 30;
+}
+
+.sub-panel-buttons:hover {
+    -fx-border-color: #CD5C5C;
+    -fx-text-fill: #CD5C5C;
+}
+
+.sub-panel-buttons:focused {
+    -fx-border-color: #CD5C5C;
+    -fx-text-fill: #CD5C5C;
+}
+
+.sub-panel-buttons:armed {
+    -fx-border-color: #696969;
+    -fx-text-fill: #696969;
+}
+
+.user-label {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 18;
+    -fx-text-fill: #858585;
+}
+
+.nav-buttons {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-text-fill: #858585;
+}
+
+.nav-buttons:hover {
+    -fx-text-fill: #CD5C5C;
+}
+
+.nav-buttons:focused {
+    -fx-text-fill: #CD5C5C;
+}
+
+.nav-buttons:selected {
+    -fx-border-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-border-radius: 0 70 70 0;
+    -fx-background-radius: 0 70 70 0;
+    -fx-text-fill: #FFFFFF;
+}
+
+.exit-button {
+    -fx-border-color: linear-gradient(to top, #FF0000, #FF6347);
+    -fx-background-color: linear-gradient(to top, #FF0000, #FF6347);
+    -fx-border-radius: 0 70 70 0;
+    -fx-background-radius: 0 70 70 0;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-text-fill: #FFFFFF;
+}
+
+.exit-button:hover {
+    -fx-border-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-text-fill: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.exit-button:focused {
+    -fx-border-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-text-fill: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.exit-button:armed {
+    -fx-border-color: linear-gradient(to top, #FF0000, #FF6347);
+    -fx-background-color: linear-gradient(to top, #696969, #BEBEBE);
+    -fx-text-fill: linear-gradient(to top, #FF0000, #FF6347);
+}
+
+.movie-table {
+    -fx-border-width: 2 0 2 0;
+    -fx-border-color: #6F7AB9;
+    -fx-background-color: transparent;
+}
+
+.movie-table .column-header {
+    -fx-background-color: transparent;
+}
+
+.movie-table .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.movie-table .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 10 0 10 80;
+}
+
+.movie-table .table-row-cell:odd {
+    -fx-background-color: #F6FCFF;
+}
+
+.movie-table .table-row-cell:even {
+    -fx-background-color: #F6FCFF;
+}
+
+.movie-table .table-row-cell:hover {
+    -fx-background-color: #FFF3FA;
+}
+
+.movie-table .table-row-cell:selected {
+    -fx-background-color: #FFDCE6;
+}
+
+.movie-table .virtual-flow .scroll-bar .increment-button,
+.movie-table .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 6 4 6 4;
+}
+
+.movie-table .virtual-flow .scroll-bar:vertical,
+.movie-table .virtual-flow .scroll-bar:vertical .track,
+.movie-table .virtual-flow .scroll-bar:vertical .track-background,
+.movie-table .virtual-flow .scroll-bar:horizontal,
+.movie-table .virtual-flow .scroll-bar:horizontal .track,
+.movie-table .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.movie-table .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.movie-info-area {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 25;
+    -fx-text-fill: #3F34C7;
+}
+
+.movie-info-area,
+.movie-info-area .scroll-pane,
+.movie-info-area .scroll-pane .viewport,
+.movie-info-area .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+.movie-list-pages {
+    -fx-background-color: #F6FCFF;
+}
+
+.movie-list-pages > .pagination-control > .control-box {
+    -fx-spacing: 3;
+}
+
+.movie-list-pages > .pagination-control > .control-box > .number-button,
+.movie-list-pages > .pagination-control > .control-box > .bullet-button,
+.movie-list-pages > .pagination-control > .control-box > .left-arrow-button,
+.movie-list-pages > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: #3F34C7, #F6FCFF;
+    -fx-text-fill: #3F34C7;
+    -fx-mark-color: #3F34C7;
+    -fx-min-width: 32;
+    -fx-min-height: 32;
+}
+
+.movie-list-pages > .pagination-control > .control-box > .number-button:hover,
+.movie-list-pages > .pagination-control > .control-box > .bullet-button:hover,
+.movie-list-pages > .pagination-control > .control-box > .left-arrow-button:hover,
+.movie-list-pages > .pagination-control > .control-box > .right-arrow-button:hover {
+    -fx-background-color: #CD5C5C, #F6FCFF;
+    -fx-text-fill: #CD5C5C;
+    -fx-mark-color: #CD5C5C;
+}
+
+.movie-list-pages > .pagination-control > .control-box > .number-button:focused,
+.movie-list-pages > .pagination-control > .control-box > .bullet-button:focused,
+.movie-list-pages > .pagination-control > .control-box > .left-arrow-button:focused,
+.movie-list-pages > .pagination-control > .control-box > .right-arrow-button:focused {
+    -fx-background-color: #CD5C5C, #F6FCFF;
+    -fx-text-fill: #CD5C5C;
+    -fx-mark-color: #CD5C5C;
+}
+
+.movie-list-pages > .pagination-control > .control-box > .number-button:armed,
+.movie-list-pages > .pagination-control > .control-box > .bullet-button:armed,
+.movie-list-pages > .pagination-control > .control-box > .left-arrow-button:armed,
+.movie-list-pages > .pagination-control > .control-box > .right-arrow-button:armed {
+    -fx-background-color: #696969, #F6FCFF;
+    -fx-text-fill: #696969;
+    -fx-mark-color: #696969;
+}
+
+.movie-list-pages > .pagination-control > .control-box > .number-button:selected,
+.movie-list-pages > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-text-fill: #FFFFFF;
+}
+
+.movie-list-pages > .pagination-control {
+    -fx-font-size: 15;
+}
+
+.movie-list-pages > .pagination-control > .page-information {
+    -fx-text-fill: #3F34C7;
+}
+
+.page-labels {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 48;
+    -fx-text-fill: #4E5CAA;
+}
+
+.age-certificate-buttons {
+    -fx-font-family: "Roboto Medium";
+    -fx-text-fill: #3F34C7;
+    -fx-border-width: 5;
+    -fx-border-color: #3F34C7;
+}
+
+.age-certificate-buttons:hover {
+    -fx-text-fill: #CD5C5C;
+    -fx-border-color: #CD5C5C;
+}
+
+.age-certificate-buttons:focused {
+    -fx-text-fill: #CD5C5C;
+    -fx-border-color: #CD5C5C;
+}
+
+.age-certificate-buttons:armed {
+    -fx-text-fill: #696969;
+    -fx-border-color: #696969;
+}
+
+.larger-button-text {
+    -fx-font-size: 90;
+}
+
+.smaller-button-text {
+    -fx-font-size: 63;
+}
+
+.age-certificate-label {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 80;
+    -fx-text-fill: #4E5CAA;
+}
+
+.age-certificate-area {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 32;
+    -fx-text-fill: #4E5CAA;
+}
+
+.age-certificate-area,
+.age-certificate-area .scroll-pane,
+.age-certificate-area .scroll-pane .viewport,
+.age-certificate-area .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+.age-certificate-area .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.age-certificate-area .scroll-bar .increment-button,
+.age-certificate-area .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+}
+
+.age-certificate-area .scroll-bar:vertical,
+.age-certificate-area .scroll-bar:vertical .track,
+.age-certificate-area .scroll-bar:vertical .track-background {
+    -fx-background-color: transparent;
+}
+
+.genre-buttons-extra {
+    -fx-background-color: transparent;
+    -fx-font-size: 36;
+}
+
+.genre-scroll-pane,
+.genre-scroll-pane .viewport,
+.genre-scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+.genre-scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.genre-scroll-pane .scroll-bar .increment-button,
+.genre-scroll-pane .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+}
+
+.genre-scroll-pane .scroll-bar:vertical,
+.genre-scroll-pane .scroll-bar:vertical .track,
+.genre-scroll-pane .scroll-bar:vertical .track-background {
+    -fx-background-color: transparent;
+}
+
+.concept-list {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.concept-list .list-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 0 0 30 30px;
+}
+
+.concept-list .list-cell:odd {
+    -fx-background-color: #F6FCFF;
+}
+
+.concept-list .list-cell:even {
+    -fx-background-color: #F6FCFF;
+}
+
+.concept-list .list-cell:hover,
+.concept-list .list-cell:focused,
+.concept-list .list-cell:selected {
+    -fx-background-color: #F6FCFF;
+}
+
+.concept-list .virtual-flow .corner {
+    -fx-background-color: #F6FCFF;
+}
+
+.concept-list .virtual-flow .scroll-bar .increment-button,
+.concept-list .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 6 4 6 4;
+}
+
+.concept-list .virtual-flow .scroll-bar:vertical,
+.concept-list .virtual-flow .scroll-bar:vertical .track,
+.concept-list .virtual-flow .scroll-bar:vertical .track-background,
+.concept-list .virtual-flow .scroll-bar:horizontal,
+.concept-list .virtual-flow .scroll-bar:horizontal .track,
+.concept-list .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.concept-list .virtual-flow .scroll-bar:horizontal .thumb,
+.concept-list .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.concept-buttons {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 30;
+    -fx-text-fill: #4E5CAA;
+    -fx-border-width: 2;
+    -fx-border-color: #4E5CAA;
+    -fx-background-color: transparent;
+}
+
+.concept-buttons:hover {
+    -fx-text-fill: #CD5C5C;
+    -fx-border-color: #CD5C5C;
+}
+
+.concept-buttons:focused {
+    -fx-text-fill: #CD5C5C;
+    -fx-border-color: #CD5C5C;
+}
+
+.concept-buttons:armed {
+    -fx-text-fill: #696969;
+    -fx-border-color: #696969;
+}
+
+.empty-concepts-label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 24;
+    -fx-text-fill: #696969;
+}
+
+.concept-text-fields {
+    -fx-font-family: "Roboto";
+    -fx-text-fill: #4E5CAA;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #4E5CAA;
+    -fx-background-color: transparent;
+}
+
+.concept-larger-text {
+    -fx-font-size: 30;
+}
+
+.concept-smaller-text {
+    -fx-font-size: 24;
+}
+
+.concept-text-labels {
+    -fx-font-family: "Roboto";
+    -fx-text-fill: #4E5CAA;
+}
+
+.concept-text-labels-larger {
+    -fx-font-size: 36;
+}
+
+.concept-text-labels-smaller {
+    -fx-font-size: 28;
+}
+
+.concept-text-labels-smallest {
+    -fx-font-size: 18;
+}
+
+.concept-sub-buttons {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 40;
+    -fx-text-fill: #4E5CAA;
+    -fx-background-color: transparent;
+    -fx-border-color: #4E5CAA;
+    -fx-border-width: 2;
+}
+
+.concept-sub-buttons:hover {
+    -fx-text-fill: #CD5C5C;
+    -fx-border-color: #CD5C5C;
+}
+
+.concept-sub-buttons:focused {
+    -fx-text-fill: #CD5C5C;
+    -fx-border-color: #CD5C5C;
+}
+
+.concept-sub-buttons:armed {
+    -fx-text-fill: #696969;
+    -fx-border-color: #696969;
+}
+
+.concept-boxes {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5;
+    -fx-border-color: #4E5CAA;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+    -fx-mark-color: #4E5CAA;
+}
+
+.concept-boxes:hover {
+    -fx-border-color: #CD5C5C;
+    -fx-mark-color: #CD5C5C;
+}
+
+.concept-boxes:focused {
+    -fx-border-color: #CD5C5C;
+    -fx-mark-color: #CD5C5C;
+}
+
+.concept-boxes:pressed {
+    -fx-border-color: #696969;
+    -fx-mark-color: #696969;
+}
+
+.concept-boxes > .label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 28;
+    -fx-text-fill: #4E5CAA;
+}
+
+.concept-boxes:hover > .label {
+    -fx-text-fill: #CD5C5C;
+}
+
+.concept-boxes:focused > .label {
+    -fx-text-fill: #CD5C5C;
+}
+
+.concept-boxes:pressed > .label {
+    -fx-text-fill: #696969;
+}
+
+.concept-boxes .context-menu {
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-border-color: #4E5CAA;
+    -fx-background-radius: 5;
+    -fx-background-color: #F6FCFF;
+}
+
+.concept-boxes .menu-item > .label {
+    -fx-text-fill: #4E5CAA;
+}
+
+.concept-boxes .menu-item:hover {
+    -fx-background-color: #CD5C5C;
+}
+
+.concept-boxes .menu-item:hover > .label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.concept-boxes .menu-item:focused {
+    -fx-background-color: #CD5C5C;
+}
+
+.concept-boxes .menu-item:focused > .label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.concept-lower-boxes {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5;
+    -fx-border-color: #4E5CAA;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+    -fx-mark-color: #4E5CAA;
+}
+
+.concept-lower-boxes:hover {
+    -fx-border-color: #CD5C5C;
+    -fx-mark-color: #CD5C5C;
+}
+
+.concept-lower-boxes:focused {
+    -fx-border-color: #CD5C5C;
+    -fx-mark-color: #CD5C5C;
+}
+
+.concept-lower-boxes:pressed {
+    -fx-border-color: #696969;
+    -fx-mark-color: #696969;
+}
+
+.concept-lower-boxes > .label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 18;
+    -fx-text-fill: #4E5CAA;
+}
+
+.concept-lower-boxes:hover > .label {
+    -fx-text-fill: #CD5C5C;
+}
+
+.concept-lower-boxes:focused > .label {
+    -fx-text-fill: #CD5C5C;
+}
+
+.concept-lower-boxes:pressed > .label {
+    -fx-text-fill: #696969;
+}
+
+.concept-lower-boxes .context-menu {
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-border-color: #4E5CAA;
+    -fx-background-radius: 5;
+    -fx-background-color: #F6FCFF;
+}
+
+.concept-lower-boxes .menu-item > .label {
+    -fx-text-fill: #4E5CAA;
+}
+
+.concept-lower-boxes .menu-item:hover {
+    -fx-background-color: #CD5C5C;
+}
+
+.concept-lower-boxes .menu-item:hover > .label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.concept-lower-boxes .menu-item:focused {
+    -fx-background-color: #CD5C5C;
+}
+
+.concept-lower-boxes .menu-item:focused > .label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.concept-delete-button {
+    -fx-background-color: linear-gradient(to top, #FF0000, #FF6347);
+    -fx-background-radius: 5;
+    -fx-border-color: linear-gradient(to top, #FF0000, #FF6347);
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 30;
+    -fx-text-fill: #FFFFFF;
+}
+
+.concept-delete-button:hover {
+    -fx-border-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-text-fill: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.concept-delete-button:focused {
+    -fx-border-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-text-fill: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.concept-delete-button:armed {
+    -fx-border-color: linear-gradient(to top, #FF0000, #FF6347);
+    -fx-background-color: linear-gradient(to top, #696969, #BEBEBE);
+    -fx-text-fill: linear-gradient(to top, #FF0000, #FF6347);
+}
+
+.concept-details-buttons {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 18;
+    -fx-text-fill: #858585;
+}
+
+.concept-details-buttons:hover {
+    -fx-text-fill: #CD5C5C;
+}
+
+.concept-details-buttons:focused {
+    -fx-text-fill: #CD5C5C;
+}
+
+.concept-details-buttons:selected {
+    -fx-border-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+    -fx-border-radius: 70;
+    -fx-background-radius: 70;
+    -fx-text-fill: #FFFFFF;
+}
+
+.concept-details-table {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.concept-details-table .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.concept-details-table .corner {
+    -fx-background-color: transparent;
+}
+
+.concept-details-table .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #8B8682, #FFF5EE);
+    -fx-background-radius: 5 5 0 0;
+    -fx-background-insets: 0 10 0 0;
+    -fx-padding: 0 0 5 0;
+}
+
+.concept-details-table .column-header {
+    -fx-background-color: transparent;
+    -fx-font-family: "Roboto Medium";
+}
+
+.concept-details-table .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 10 5 10 5;
+}
+
+.concept-details-table .table-row-cell:odd {
+    -fx-background-color: #FFF5EE;
+}
+
+.concept-details-table .table-row-cell:even {
+    -fx-background-color: #FFF5EE;
+}
+
+.concept-details-table .table-row-cell:hover {
+    -fx-background-color: #6F7AB9;
+}
+
+.concept-details-table .table-row-cell:selected {
+    -fx-background-color: #3F34C7;
+}
+
+.concept-details-table .virtual-flow .scroll-bar .increment-button,
+.concept-details-table .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 6 3 6 3;
+}
+
+.concept-details-table .virtual-flow .scroll-bar:vertical,
+.concept-details-table .virtual-flow .scroll-bar:vertical .track,
+.concept-details-table .virtual-flow .scroll-bar:vertical .track-background,
+.concept-details-table .virtual-flow .scroll-bar:horizontal,
+.concept-details-table .virtual-flow .scroll-bar:horizontal .track,
+.concept-details-table .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.concept-details-table .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.concept-detail-title {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 15;
+}
+
+.concept-detail-not-value {
+    -fx-font-size: 15;
+}
+.concept-detail-value {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 15;
+}
+
+.certain-movie-label {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 34;
+    -fx-text-fill: #3F34C7;
+}
+
+.certain-movie-buttons {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 32;
+    -fx-text-fill: #4E5CAA;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.certain-movie-buttons:hover {
+    -fx-text-fill: #CD5C5C;
+}
+
+.certain-movie-buttons:focused {
+    -fx-text-fill: #CD5C5C;
+}
+
+.certain-movie-buttons:armed {
+    -fx-text-fill: #696969;
+}
+
+.movie-position-list {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.movie-position-list .list-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 0 0 5 10px;
+}
+
+.movie-position-list .list-cell:odd {
+    -fx-background-color: #F6FCFF;
+}
+
+.movie-position-list .list-cell:even {
+    -fx-background-color: #F6FCFF;
+}
+
+.movie-position-list .list-cell:hover,
+.movie-position-list .list-cell:focused,
+.movie-position-list .list-cell:selected {
+    -fx-background-color: #F6FCFF;
+}
+
+.movie-position-list .virtual-flow .corner {
+    -fx-background-color: #F6FCFF;
+}
+
+.movie-position-list .virtual-flow .scroll-bar .increment-button,
+.movie-position-list .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 6 4 6 4;
+}
+
+.movie-position-list .virtual-flow .scroll-bar:vertical,
+.movie-position-list .virtual-flow .scroll-bar:vertical .track,
+.movie-position-list .virtual-flow .scroll-bar:vertical .track-background,
+.movie-position-list .virtual-flow .scroll-bar:horizontal,
+.movie-position-list .virtual-flow .scroll-bar:horizontal .track,
+.movie-position-list .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.movie-position-list .virtual-flow .scroll-bar:horizontal .thumb,
+.movie-position-list .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to top, #3F34C7, #6F7AB9);
+}
+
+.movie-position-label {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 60;
+    -fx-text-fill: #4E5CAA;
+}
+
+.movie-position-buttons {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 32;
+    -fx-text-fill: #4E5CAA;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.movie-position-buttons:hover {
+    -fx-text-fill: #CD5C5C;
+}
+
+.movie-position-buttons:focused {
+    -fx-text-fill: #CD5C5C;
+}
+
+.movie-position-buttons:armed {
+    -fx-text-fill: #696969;
+}

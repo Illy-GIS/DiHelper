@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="backButton" layoutX="110.0" layoutY="55.0" mnemonicParsing="false" styleClass="sub-panel-buttons" text="&lt;   Назад">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="saveButton" layoutX="300.0" layoutY="55.0" mnemonicParsing="false" styleClass="sub-panel-buttons" text="Сохранить">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </Button>
+      <TextField fx:id="conceptTitleField" layoutX="110.0" layoutY="130.0" prefHeight="65.0" prefWidth="945.0" promptText="Название концепта">
+         <styleClass>
+            <String fx:value="concept-text-fields" />
+            <String fx:value="concept-larger-text" />
+         </styleClass>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Label focusTraversable="false" layoutX="110.0" layoutY="210.0" mouseTransparent="true" prefHeight="53.0" prefWidth="215.0" text="Бюджет ($):">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-labels" />
+            <String fx:value="concept-text-labels-larger" />
+         </styleClass>
+      </Label>
+      <TextField fx:id="budgetField" layoutX="335.0" layoutY="210.0" prefHeight="53.0" prefWidth="275.0" promptText="Введите бюджет">
+         <styleClass>
+            <String fx:value="concept-text-fields" />
+            <String fx:value="concept-smaller-text" />
+         </styleClass>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="genreBox1" layoutX="800.0" layoutY="210.0" prefHeight="53.0" prefWidth="310.0" styleClass="concept-boxes" />
+      <Label focusTraversable="false" layoutX="630.0" layoutY="210.0" mouseTransparent="true" prefHeight="53.0" prefWidth="160.0" styleClass="concept-text-labels" text="Жанры:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="genreBox2" layoutX="800.0" layoutY="270.0" prefHeight="53.0" prefWidth="310.0" styleClass="concept-boxes" />
+      <ChoiceBox fx:id="genreBox3" layoutX="800.0" layoutY="330.0" prefHeight="53.0" prefWidth="310.0" styleClass="concept-boxes" />
+      <Button fx:id="recommendButton" layoutX="120.0" layoutY="600.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="400.0" styleClass="concept-sub-buttons" text="Рекомендации">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="detailsButton" layoutX="645.0" layoutY="600.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="400.0" styleClass="concept-sub-buttons" text="Детали концепта">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Label focusTraversable="false" layoutX="70.0" layoutY="405.0" mouseTransparent="true" prefHeight="120.0" prefWidth="500.0" text="Приоритеты для составления списка фильмов для заимствования деталей:" wrapText="true">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-labels" />
+            <String fx:value="concept-text-labels-smaller" />
+         </styleClass>
+      </Label>
+      <Label focusTraversable="false" layoutX="620.0" layoutY="405.0" mouseTransparent="true" prefHeight="40.0" prefWidth="90.0" text="Высший:" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-labels" />
+            <String fx:value="concept-text-labels-smallest" />
+         </styleClass>
+      </Label>
+      <Label focusTraversable="false" layoutX="620.0" layoutY="450.0" mouseTransparent="true" prefHeight="40.0" prefWidth="90.0" text="Средний:" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-labels" />
+            <String fx:value="concept-text-labels-smallest" />
+         </styleClass>
+      </Label>
+      <Label focusTraversable="false" layoutX="620.0" layoutY="495.0" mouseTransparent="true" prefHeight="40.0" prefWidth="90.0" text="Низший:" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-labels" />
+            <String fx:value="concept-text-labels-smallest" />
+         </styleClass>
+      </Label>
+      <ChoiceBox fx:id="highPriorityBox" layoutX="725.0" layoutY="405.0" prefHeight="40.0" prefWidth="350.0" styleClass="concept-lower-boxes" />
+      <ChoiceBox fx:id="mediumPriorityBox" layoutX="725.0" layoutY="450.0" prefHeight="40.0" prefWidth="350.0" styleClass="concept-lower-boxes" />
+      <ChoiceBox fx:id="lowPriorityBox" layoutX="725.0" layoutY="495.0" prefHeight="40.0" prefWidth="350.0" styleClass="concept-lower-boxes" />
+      <Button fx:id="deleteButton" layoutX="798.0" layoutY="55.0" mnemonicParsing="false" styleClass="concept-delete-button" text="Удалить концепт">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </Button>
+   </children>
+</fx:root>

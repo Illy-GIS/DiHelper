@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1440.0" styleClass="basic-panels" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gis.app.controllers.MainPageController">
+   <children>
+      <Pane fx:id="topPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="1440.0" styleClass="basic-panels">
+         <children>
+            <ImageView fx:id="topLogo" fitHeight="75.0" fitWidth="370.0" layoutX="42.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="userLabel" alignment="CENTER_RIGHT" layoutX="426.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="950.0" styleClass="user-label" text="Label" />
+         </children>
+      </Pane>
+      <Pane fx:id="leftNavPane" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="865.0" prefWidth="275.0" styleClass="basic-panels">
+         <children>
+            <ToggleButton fx:id="conceptsButton" alignment="CENTER_LEFT" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="nav-buttons" text="Концепты">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Menu" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="moviesButton" alignment="CENTER_LEFT" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" selected="true" styleClass="nav-buttons" text="Фильмы" toggleGroup="$Menu" />
+            <ToggleButton fx:id="genresButton" alignment="CENTER_LEFT" layoutY="206.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="nav-buttons" text="Жанры" toggleGroup="$Menu" />
+            <ToggleButton fx:id="certificatesButton" alignment="CENTER_LEFT" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="nav-buttons" text="Возрастные рейтинги" toggleGroup="$Menu" />
+            <Button fx:id="exitButton" layoutY="676.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="exit-button" text="Выйти" />
+         </children></Pane>
+      <Separator focusTraversable="false" layoutY="87.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="1440.0" />
+      <Separator focusTraversable="false" layoutX="272.0" layoutY="88.0" maxHeight="-Infinity" minHeight="-Infinity" orientation="VERTICAL" prefHeight="865.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>

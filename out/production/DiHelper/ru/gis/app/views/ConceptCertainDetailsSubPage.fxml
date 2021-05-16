@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="backButton" layoutX="110.0" layoutY="55.0" mnemonicParsing="false" styleClass="sub-panel-buttons" text="&lt;   Назад">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </Button>
+      <TextField fx:id="ageCertificateField" layoutX="83.0" layoutY="130.0" prefHeight="65.0" prefWidth="1000.0" promptText="Выберите один из предложенных вариантов или введите свой">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-fields" />
+            <String fx:value="concept-larger-text" />
+         </styleClass>
+      </TextField>
+      <ToggleButton fx:id="ageCertificateButton" layoutY="220.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" selected="true" styleClass="concept-details-buttons" text="Возрастной рейтинг">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="DetailsGroup" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="runtimeButton" layoutY="275.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" styleClass="concept-details-buttons" text="Длительность" toggleGroup="$DetailsGroup">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="locationsButton" layoutY="330.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" styleClass="concept-details-buttons" text="Съемочные локации" toggleGroup="$DetailsGroup">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="camerasButton" layoutY="385.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" styleClass="concept-details-buttons" text="Камеры" toggleGroup="$DetailsGroup">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="castButton" layoutY="440.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" styleClass="concept-details-buttons" text="Актерский состав" toggleGroup="$DetailsGroup">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </ToggleButton>
+      <TableView fx:id="detailsTable" fixedCellSize="70.0" layoutX="265.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="890.0" styleClass="concept-details-table">
+        <columns>
+          <TableColumn fx:id="titleColumn" editable="false" prefWidth="200.0" resizable="false" sortable="false" text="Название" />
+          <TableColumn fx:id="yearColumn" editable="false" resizable="false" sortable="false" text="Год выхода" />
+          <TableColumn fx:id="scoreColumn" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Оценка" />
+          <TableColumn fx:id="budgetColumn" editable="false" prefWidth="100.0" resizable="false" sortable="false" text="Бюджет" />
+          <TableColumn fx:id="grossColumn" editable="false" prefWidth="110.0" resizable="false" sortable="false" text="Сборы" />
+          <TableColumn fx:id="valueColumn" editable="false" prefWidth="330.0" resizable="false" sortable="false" text="Предлагаемое значение" />
+        </columns>
+      </TableView>
+      <TextField fx:id="runtimeField" layoutX="83.0" layoutY="130.0" prefHeight="65.0" prefWidth="1000.0" promptText="Выберите один из предложенных вариантов или введите свой" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-fields" />
+            <String fx:value="concept-larger-text" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="locationsField" layoutX="83.0" layoutY="130.0" prefHeight="65.0" prefWidth="1000.0" promptText="Выберите один из предложенных вариантов или введите свой" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-fields" />
+            <String fx:value="concept-larger-text" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="camerasField" layoutX="83.0" layoutY="130.0" prefHeight="65.0" prefWidth="1000.0" promptText="Выберите один из предложенных вариантов или введите свой" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-fields" />
+            <String fx:value="concept-larger-text" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="castField" layoutX="83.0" layoutY="130.0" prefHeight="65.0" prefWidth="1000.0" promptText="Выберите один из предложенных вариантов или введите свой" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <styleClass>
+            <String fx:value="concept-text-fields" />
+            <String fx:value="concept-larger-text" />
+         </styleClass>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="323.0" layoutY="30.0" prefHeight="90.0" prefWidth="800.0" styleClass="concept-text-labels" text="Возрастной рейтинг должен соответствовать одному из значений: G, PG, PG-13, R, NC-17; длительность представляет собой целое неотрицательное число – продолжительность в минутах; съемочные локации, камеры и актерский состав могут содержать множество позиций, разделяемых ';'. Детали в таблице формируются исходя из рамок заданных жанров и бюджета." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

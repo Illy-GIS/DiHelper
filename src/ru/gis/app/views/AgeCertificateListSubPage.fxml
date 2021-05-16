@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gis.app.controllers.AgeCertificateListSubPageController">
+   <children>
+      <Label fx:id="pageLabel" focusTraversable="false" layoutX="90.0" layoutY="40.0" styleClass="page-labels" text="ВОЗРАСТНЫЕ РЕЙТИНГИ">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="gRating" alignment="CENTER" layoutX="110.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="185.0" prefWidth="415.0" text="G  0+">
+         <font>
+            <Font size="90.0" />
+         </font>
+         <styleClass>
+            <String fx:value="age-certificate-buttons" />
+            <String fx:value="larger-button-text" />
+         </styleClass>
+      </Button>
+      <Button fx:id="pgRating" alignment="CENTER" layoutX="640.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="185.0" prefWidth="415.0" text="PG  6+">
+         <font>
+            <Font size="90.0" />
+         </font>
+         <styleClass>
+            <String fx:value="age-certificate-buttons" />
+            <String fx:value="larger-button-text" />
+         </styleClass>
+      </Button>
+      <Button fx:id="pg13Rating" alignment="CENTER" layoutX="110.0" layoutY="390.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="185.0" prefWidth="415.0" text="PG-13  12+">
+         <font>
+            <Font size="63.0" />
+         </font>
+         <styleClass>
+            <String fx:value="age-certificate-buttons" />
+            <String fx:value="smaller-button-text" />
+         </styleClass>
+      </Button>
+      <Button fx:id="rRating" alignment="CENTER" layoutX="640.0" layoutY="390.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="185.0" prefWidth="415.0" text="R  16+">
+         <font>
+            <Font size="90.0" />
+         </font>
+         <styleClass>
+            <String fx:value="age-certificate-buttons" />
+            <String fx:value="larger-button-text" />
+         </styleClass>
+      </Button>
+      <Button fx:id="nc17Rating" alignment="CENTER" layoutX="375.0" layoutY="630.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="185.0" prefWidth="415.0" text="NC-17  18+">
+         <font>
+            <Font size="63.0" />
+         </font>
+         <styleClass>
+            <String fx:value="age-certificate-buttons" />
+            <String fx:value="smaller-button-text" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="backButton" layoutX="110.0" layoutY="55.0" mnemonicParsing="false" styleClass="sub-panel-buttons" text="&lt;   Назад">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </Button>
+      <Label fx:id="ageCertificateLabel" layoutX="110.0" layoutY="140.0" prefHeight="85.0" prefWidth="750.0" styleClass="age-certificate-label" text="Label" />
+      <TextArea fx:id="ageCertificateInfoArea" editable="false" focusTraversable="false" layoutX="110.0" layoutY="270.0" prefHeight="540.0" prefWidth="945.0" styleClass="age-certificate-area" wrapText="true" />
+   </children>
+</fx:root>

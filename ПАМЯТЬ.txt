@@ -1,0 +1,38 @@
+C:\Users\Илья\.jdks\openjdk-15.0.1\bin\java.exe --module-path C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml,javafx.swing,javafx.graphics,javafx.media,javafx.web --add-reads javafx.graphics=ALL-UNNAMED --add-opens javafx.controls/com.sun.javafx.charts=ALL-UNNAMED --add-opens javafx.controls/com.sun.javafx.scene.control.inputmap=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio.common=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.css=ALL-UNNAMED --add-opens javafx.base/com.sun.javafx.runtime=ALL-UNNAMED "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\lib\idea_rt.jar=52895:C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Илья\IdeaProjects\DiHelper\out\production\DiHelper;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\src.zip;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx-swt.jar;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx.web.jar;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx.base.jar;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx.fxml.jar;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx.media.jar;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx.swing.jar;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx.controls.jar;C:\Users\Илья\IdeaProjects\!JAVAFX_SDK\javafx-sdk-11.0.2\lib\javafx.graphics.jar;C:\Users\Илья\.m2\repository\mysql\mysql-connector-java\8.0.23\mysql-connector-java-8.0.23.jar;C:\Users\Илья\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar ru.gis.app.ApplicationMain
+мая 07, 2021 1:41:39 AM com.sun.javafx.tk.quantum.PrismImageLoader2$PrismLoadListener imageLoadWarning
+WARNING: Corrupt JPEG data: 1 extraneous bytes before marker 0xd9
+[1034.471s][warning][gc,alloc] Thread-119: Retried waiting for GCLocker too often allocating 527609 words
+[1035.472s][warning][gc,alloc] Thread-111: Retried waiting for GCLocker too often allocating 562502 words
+[1035.670s][warning][gc,alloc] Thread-111: Retried waiting for GCLocker too often allocating 569252 words
+Exception in thread "Keep-Alive-Timer" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Keep-Alive-Timer" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Keep-Alive-SocketCleaner" java.lang.OutOfMemoryError: Java heap space
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Thread-117"
+Exception in thread "HandshakeCompletedNotify-Thread" java.lang.OutOfMemoryError: Java heap space
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Keep-Alive-Timer"
+Exception in thread "HandshakeCompletedNotify-Thread" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Thread-119" java.lang.OutOfMemoryError: Java heap space
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Keep-Alive-SocketCleaner"
+Exception in thread "Keep-Alive-Timer" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Thread-116" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Keep-Alive-Timer" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Keep-Alive-Timer" java.lang.OutOfMemoryError: Java heap space
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Keep-Alive-Timer"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Keep-Alive-SocketCleaner"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Keep-Alive-Timer"
+Exception in thread "Thread-111" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "JavaFX Application Thread" java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "InvokeLaterDispatcher"
+
+Process finished with exit code -1

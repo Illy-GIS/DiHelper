@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="topPagePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="105.0" prefWidth="1165.0" styleClass="sub-panels">
+         <children>
+            <Label fx:id="pageLabel" focusTraversable="false" layoutX="90.0" layoutY="40.0" styleClass="page-labels" text="ФИЛЬМЫ">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pagination fx:id="movieListPages" layoutY="106.0" maxPageIndicatorCount="25" pageCount="51" prefHeight="755.0" prefWidth="1165.0" styleClass="movie-list-pages">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding></Pagination>
+   </children>
+</fx:root>

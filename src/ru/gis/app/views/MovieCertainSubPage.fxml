@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="backButton" layoutX="110.0" layoutY="55.0" mnemonicParsing="false" styleClass="sub-panel-buttons" text="&lt;   Назад">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </Button>
+      <Label fx:id="movieLabel" focusTraversable="false" layoutX="535.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="600.0" styleClass="certain-movie-label" text="Label" wrapText="true" />
+      <TextArea fx:id="movieInfoArea" editable="false" focusTraversable="false" layoutX="510.0" layoutY="255.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="625.0" styleClass="age-certificate-area" wrapText="true" />
+      <ImageView fx:id="poster" fitHeight="650.0" fitWidth="440.0" layoutX="45.0" layoutY="160.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="locationsListButton" layoutX="510.0" layoutY="612.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="625.0" styleClass="certain-movie-buttons" text="Список съемочных локаций" />
+      <Button fx:id="camerasListButton" layoutX="510.0" layoutY="662.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="625.0" styleClass="certain-movie-buttons" text="Список камер" />
+      <Button fx:id="castListButton" layoutX="510.0" layoutY="712.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="625.0" styleClass="certain-movie-buttons" text="Список актеров" />
+   </children>
+</fx:root>
