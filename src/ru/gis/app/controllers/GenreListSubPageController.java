@@ -12,7 +12,7 @@ import ru.gis.app.managers.GenreManager;
 import java.sql.SQLException;
 import java.util.List;
 
-public class GenreListSubPage {
+public class GenreListSubPageController {
     @FXML
     private AnchorPane mainPane;
 

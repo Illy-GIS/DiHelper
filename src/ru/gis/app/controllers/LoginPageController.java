@@ -175,7 +175,7 @@ public class LoginPageController {
                     UserEntity userToRegister = new UserEntity(regEmailField.getText(), regNameField.getText(), CipherUtil.hashData(regPasswordField.getText().getBytes()));
                     UserManager.addRow(userToRegister);
                     ApplicationMain.currentUser = userToRegister;
-                    ApplicationMain.mainScene.setRoot(FXMLLoader.load(getClass().getResource("../../../../sample/sample.fxml")));
+                    ApplicationMain.mainScene.setRoot(FXMLLoader.load(getClass().getResource("../views/MainPage.fxml")));
                 } catch (NoSuchAlgorithmException | SQLException | IOException e) {
                     e.printStackTrace();
                 }
@@ -190,7 +190,7 @@ public class LoginPageController {
             troublesFound = true;
             errorLog.append("Пожалуйста введите корректный email");
         }
-        if (!regNameField.getText().matches("[a-zA-Zа-яА-я\s\\-`']*")) {
+        if (!regNameField.getText().matches("[a-zA-Zа-яА-Я\s\\-`']*")) {
             troublesFound = true;
             if (!errorLog.isEmpty()) {
                 errorLog.append("\n");

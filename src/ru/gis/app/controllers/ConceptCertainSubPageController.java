@@ -362,6 +362,10 @@ public class ConceptCertainSubPageController extends AnchorPane {
             errorBuilder.append("Введите название концепта.").append("\n");
             anyTroubles = true;
         }
+        if (conceptTitleField.getText().length() > 300) {
+            errorBuilder.append("Название концепта должно содержать не более 300 символов.").append("\n");
+            anyTroubles = true;
+        }
         if (!budgetField.getText().matches("[0-9\s,.-]*")) {
             errorBuilder.append("Бюджет может содержать цифры, ',', '.', '-' и символ пробела.").append("\n");
             anyTroubles = true;

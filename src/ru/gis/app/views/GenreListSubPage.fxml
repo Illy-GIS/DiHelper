@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gis.app.controllers.GenreListSubPage">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1165.0" styleClass="sub-panels" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gis.app.controllers.GenreListSubPageController">
    <children>
       <Label fx:id="pageLabel" focusTraversable="false" layoutX="90.0" layoutY="40.0" styleClass="page-labels" text="ЖАНРЫ">
          <font>
