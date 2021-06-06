@@ -1,19 +1,12 @@
 package ru.gis.app.entities;
 
 import javafx.scene.control.TextArea;
-import javafx.scene.image.ImageView;
-
-import java.util.Objects;
 
 public class MovieTableEntity {
-    /*private final ImageView minorPoster;
-    private final ImageView majorPoster;*/
     private final TextArea movieInfo = new TextArea();
     private final MovieEntity movieEntity;
 
     public MovieTableEntity(MovieEntity movieEntity) {
-        /*minorPoster = movieEntity.getMinorPosterImageView();
-        majorPoster = movieEntity.getMajorPosterImageView();*/
         movieInfo.setWrapText(true);
         movieInfo.getStyleClass().add("movie-info-area");
         StringBuilder infoBuilder = new StringBuilder();
@@ -41,21 +34,11 @@ public class MovieTableEntity {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("MovieTableEntity{");
-        /*sb.append("minorPoster=").append(minorPoster);
-        sb.append(", majorPoster=").append(majorPoster);*/
         sb.append(", movieInfo=").append(movieInfo);
         sb.append(", movieEntity=").append(movieEntity);
         sb.append('}');
         return sb.toString();
     }
-
-    /*public ImageView getMinorPoster() {
-        return minorPoster;
-    }
-
-    public ImageView getMajorPoster() {
-        return majorPoster;
-    }*/
 
     public TextArea getMovieInfo() {
         return movieInfo;

@@ -24,11 +24,6 @@ public class ApplicationMain extends Application {
     public static Scene mainScene;
     public static List<FontEntity> fontList = new ArrayList<>();
     public static List<MovieEntity> movieList = new ArrayList<>();
-    /*public static List<MovieTableEntity> movieTableFirstPage = new ArrayList<>();
-    public static List<MovieTableEntity> movieTableSecondPage = new ArrayList<>();
-    public static List<MovieTableEntity> movieTableThirdPage = new ArrayList<>();
-    public static List<MovieTableEntity> movieTableFourthPage = new ArrayList<>();
-    public static List<MovieTableEntity> movieTableFifthPage = new ArrayList<>();*/
 
     public static UserEntity currentUser;
 
@@ -56,69 +51,6 @@ public class ApplicationMain extends Application {
             }
         });
         toFillDataThread.start();
-        /*Thread toFillPagesThread = new Thread(() -> {
-            try {
-                for (MovieEntity movieEntity : MovieManager.getAllRowsWithLimits(1, 101)) {
-                    movieEntity.setImages(540, 800);
-                    movieTableFirstPage.add(new MovieTableEntity(movieEntity));
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            for (MovieTableEntity elem : movieTableFirstPage) {
-                elem.getMajorPoster().setPreserveRatio(true);
-                elem.getMajorPoster().setFitWidth(270);
-            }
-            try {
-                for (MovieEntity movieEntity : MovieManager.getAllRowsWithLimits(101, 201)) {
-                    movieEntity.setImages(540, 800);
-                    movieTableSecondPage.add(new MovieTableEntity(movieEntity));
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            for (MovieTableEntity elem : movieTableSecondPage) {
-                elem.getMajorPoster().setPreserveRatio(true);
-                elem.getMajorPoster().setFitWidth(270);
-            }
-            try {
-                for (MovieEntity movieEntity : MovieManager.getAllRowsWithLimits(201, 301)) {
-                    movieEntity.setImages(540, 800);
-                    movieTableThirdPage.add(new MovieTableEntity(movieEntity));
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            for (MovieTableEntity elem : movieTableThirdPage) {
-                elem.getMajorPoster().setPreserveRatio(true);
-                elem.getMajorPoster().setFitWidth(270);
-            }
-            try {
-                for (MovieEntity movieEntity : MovieManager.getAllRowsWithLimits(301, 401)) {
-                    movieEntity.setImages(540, 800);
-                    movieTableFourthPage.add(new MovieTableEntity(movieEntity));
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            for (MovieTableEntity elem : movieTableFourthPage) {
-                elem.getMajorPoster().setPreserveRatio(true);
-                elem.getMajorPoster().setFitWidth(270);
-            }
-            try {
-                for (MovieEntity movieEntity : MovieManager.getAllRowsWithLimits(401, 501)) {
-                    movieEntity.setImages(540, 800);
-                    movieTableFifthPage.add(new MovieTableEntity(movieEntity));
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            for (MovieTableEntity elem : movieTableFifthPage) {
-                elem.getMajorPoster().setPreserveRatio(true);
-                elem.getMajorPoster().setFitWidth(270);
-            }
-        });
-        toFillPagesThread.start();*/
     }
 
     private void initFonts() {

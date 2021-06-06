@@ -50,29 +50,6 @@ public class MovieListSubPageController extends AnchorPane {
     }
 
     private Node createPage(int pageIndex) {
-        /*if (pageIndex == 0) {
-            ObservableList<MovieTableEntity> listForTable = FXCollections.observableArrayList(ApplicationMain.movieTableFirstPage);
-            movieTable.setItems(listForTable);
-        } else if (pageIndex == 1) {
-            ObservableList<MovieTableEntity> listForTable = FXCollections.observableArrayList(ApplicationMain.movieTableSecondPage);
-            movieTable.setItems(listForTable);
-        } else if (pageIndex == 2) {
-            ObservableList<MovieTableEntity> listForTable = FXCollections.observableArrayList(ApplicationMain.movieTableThirdPage);
-            movieTable.setItems(listForTable);
-        } else if (pageIndex == 3) {
-            ObservableList<MovieTableEntity> listForTable = FXCollections.observableArrayList(ApplicationMain.movieTableFourthPage);
-            movieTable.setItems(listForTable);
-        } else if (pageIndex == 4) {
-            ObservableList<MovieTableEntity> listForTable = FXCollections.observableArrayList(ApplicationMain.movieTableFifthPage);
-            movieTable.setItems(listForTable);
-        } else {
-            int limit = (pageIndex + 1) * 100;
-            List<MovieTableEntity> listForTable = new ArrayList<>();
-            for (int i = limit - 100; i < (Math.min(limit, ApplicationMain.movieTableEntityList.size())); i++) {
-                listForTable.add(ApplicationMain.movieTableEntityList.get(i));
-            }
-            movieTable.setItems(FXCollections.observableArrayList(listForTable));
-        }*/
         int limit = (pageIndex + 1) * 100;
         List<MovieTableEntity> listForTable = new ArrayList<>();
         for (int i = limit - 100; i < Math.min(limit, ApplicationMain.movieList.size()); i++) {
@@ -86,11 +63,8 @@ public class MovieListSubPageController extends AnchorPane {
     private TableView<MovieTableEntity> createTable() {
         TableView<MovieTableEntity> tableView = new TableView<>();
         tableView.getStyleClass().add("movie-table");
-//        tableView.setMinSize(1164, 573);
         tableView.setMinSize(1164, 660);
-//        tableView.setPrefSize(1164, 573);
         tableView.setPrefSize(1164, 660);
-//        tableView.setMaxSize(1164, 573);
         tableView.setMaxSize(1164, 660);
         TableColumn<MovieTableEntity, ImageView> posterColumn = new TableColumn<>("Постер");
         posterColumn.setMinWidth(350);
@@ -106,7 +80,6 @@ public class MovieListSubPageController extends AnchorPane {
         infoColumn.setReorderable(false);
         infoColumn.setResizable(false);
         infoColumn.setCellValueFactory(new PropertyValueFactory<>("movieInfo"));
-//        tableView.getColumns().addAll(posterColumn, infoColumn);
         tableView.setFixedCellSize(300.0);
         tableView.setOnMouseClicked(mouseEvent -> {
             if (tableView.getSelectionModel().getSelectedItem() != null) {
